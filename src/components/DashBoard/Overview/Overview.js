@@ -8,7 +8,7 @@ const Overview = () => {
   const [user, loading, error] = useAuthState(auth);
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=44e5e2d54b6a4017b64391872a63de9f`, {
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=5bc8cf8d7bd44e9b8efab6722f5a0747`, {
       method: 'GET',
     })
       .then(res => res.json())
