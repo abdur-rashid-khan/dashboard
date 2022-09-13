@@ -13,13 +13,6 @@ const AddNews = () => {
 
   }
 
-  // agree
-  // const agreeBtn = e => {
-  //   const agreeValue = e.target.checked;
-  //   setAgree(agreeValue)
-  // }
-  // for user 
-
   if (loading) {
     return <Loading></Loading>
   }
