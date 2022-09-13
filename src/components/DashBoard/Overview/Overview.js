@@ -8,7 +8,7 @@ const Overview = () => {
   const [user, loading, error] = useAuthState(auth);
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=efaf386aa7f84b52a085b397bafbc7b5`, {
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=c8751d2fe642428b8e1ad69b2b7e4198`, {
       method: 'GET',
     })
       .then(res => res.json())
@@ -21,7 +21,6 @@ const Overview = () => {
   if (error) {
     console.log(error);
   }
-  console.log(headline?.articles);
   return (
     <div>
       <div className="overflow-x-auto">
