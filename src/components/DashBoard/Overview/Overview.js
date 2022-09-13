@@ -21,7 +21,7 @@ const Overview = () => {
   if (error) {
     console.log(error);
   }
-  // console.log(headline?.articles);
+  console.log(headline?.articles);
   return (
     <div>
       <div className="overflow-x-auto">
@@ -30,8 +30,8 @@ const Overview = () => {
             <tr>
               <th>Id</th>
               <th>Headline of top news</th>
-              <th>Date</th>
-              <th>Time</th>
+              <th className='text-center'>Date</th>
+              <th className='text-center'>Time</th>
             </tr>
           </thead>
           <tbody>
@@ -42,11 +42,11 @@ const Overview = () => {
                   <tr key={index}>
                     <th>{index + 1}</th>
                     {
-                      t?.title.length > 61 ? <td>{t?.title.slice(0, 60)}</td> : <td>{t?.title}...</td>
+                      t?.title.length > 61 ? <td>{t?.title.slice(0, 60)}...</td> : <td>{t?.title}</td>
                     }
 
-                    <td>{t?.publishedAt.slice(0, 10)}</td>
-                    <td>{t?.publishedAt.slice(11, 19)}</td>
+                    <td className='text-center'>{t?.publishedAt.slice(0, 10)}</td>
+                    <td className='text-center'>{t?.publishedAt.slice(11, 19)}</td>
                   </tr>
               )
             }
