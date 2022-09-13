@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom';
 // for hero icon 
 import { CalendarIcon, CheckCircleIcon, ExclamationCircleIcon, HomeIcon, MenuIcon, PuzzleIcon, ViewGridAddIcon } from '@heroicons/react/solid'
 import CustomLink from './Active/CustomLink';
-import Footer from '../Footer/Footer';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
@@ -68,7 +67,6 @@ const DashBoard = () => {
 					</div>
 				</div>
 			</div>
-			<Footer></Footer>
 		</>
 	);
 };
